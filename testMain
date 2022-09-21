@@ -1,0 +1,20 @@
+package test;
+
+import animal.Caballo;
+import juguete.Pelota;
+
+public class Test {
+    public static void main(String[] args) {
+        String resultado;
+        
+        //Instancia Caballo
+        
+        Caballo c1 = new Caballo("Pura Sangre", 50, 400);
+        System.out.println(c1);
+        
+        //Instancia Pelota
+        
+        Pelota p1 = new Pelota(50, 350, "Molten");
+        System.out.println(p1);
+    }
+}
