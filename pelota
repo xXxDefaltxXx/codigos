@@ -1,0 +1,48 @@
+package juguete;
+
+public class Pelota {
+    private double tamanio;
+    private double precio;
+    private String marca;
+    
+    //Constructores:
+    //Constructor vacio
+    public Pelota(){
+    }
+    
+    public Pelota(double tamanio, double precio, String marca){
+        this.tamanio = tamanio;
+        this.precio = precio;
+        this.marca = marca;
+    }
+
+    public double getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(double tamanio) {
+        this.tamanio = tamanio;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    @Override
+    public String toString() {
+        return "Pelota{ " + "tamanio = " + tamanio + "cm , precio = $" + precio + ", marca =" + marca + '}';
+    }
+
+}
