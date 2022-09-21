@@ -1,0 +1,51 @@
+package animal;
+
+public class Caballo {
+    
+    //Atributos
+    private String razaCaballo;
+    private double velocidad;
+    private double fuerza;
+    
+    //Constructores:
+    //Constructor vacío
+    public Caballo(){
+    }
+    
+    //Constructor con argumentos
+    public Caballo(String razaCaballo, double velocidad, double fuerza){
+        this.razaCaballo = razaCaballo;
+        this.velocidad = velocidad;
+        this.fuerza = fuerza;
+    }
+
+    public String getRazaCaballo() {
+        return razaCaballo;
+    }
+
+    public void setRazaCaballo(String razaCaballo) {
+        this.razaCaballo = razaCaballo;
+    }
+
+    public double getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(double velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public double getFuerza() {
+        return fuerza;
+    }
+
+    public void setFuerza(double fuerza) {
+        this.fuerza = fuerza;
+    }
+
+    @Override
+    public String toString() {
+        return "Caballo{ razaCaballo=" + razaCaballo + ", velocidad=" + velocidad + "km/h , fuerza=" + fuerza + "toneladas de fuerza }";
+    }
+
+ }
